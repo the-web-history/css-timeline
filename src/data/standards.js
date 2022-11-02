@@ -155,15 +155,6 @@ const data = [
     tags: ["browsers", "standards"],
   },
   {
-    name: "Safari 1.0",
-    url: "https://www.webdesignmuseum.org/web-design-history/safari-1-0-2003",
-    description:
-      "Apple introduced its own web browser, Safari 1.0. The browser uses the WebKit renderer to display website content. Safari 1.0 was initially available for download as a standalone program, but, in October 2003, it became the default Mac OS X 10.3 operating system browser.",
-    created_at: new Date("2003-06-23"),
-    tags: ["browsers", "standards"],
-  },
-
-  {
     name: "CSS Grid",
     url: "https://www.w3.org/TR/2007/WD-css3-grid-20070905/",
     description:
