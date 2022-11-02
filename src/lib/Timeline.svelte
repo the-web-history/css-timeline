@@ -47,6 +47,7 @@
  const tags = [
 		 'articles',
 		 'css-in-js',
+     'browsers',
 		 'frameworks',
 		 'methodology',
 		 'preprocessors',
