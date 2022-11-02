@@ -167,7 +167,7 @@ const data = [
     url: "https://www.w3.org/TR/2009/WD-css3-flexbox-20090723/",
     description:
       "W3C issued the first proposal of the CSS Flexible box layout (Flexbox) specification. Flexbox introduces a new way of creating web layout, an easier alignment of elements and a better distribution of space with respect to the device's display resolution. Flexbox features are currently supported in most major browsers.",
-    created_at: new Date(""),
+    created_at: new Date("2009-07-23"),
     tags: ["standards"],
   },
 ];
