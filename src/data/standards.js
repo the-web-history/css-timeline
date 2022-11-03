@@ -44,6 +44,13 @@ const data = [
     created_at: new Date("1995-05-01"),
     tags: ["standards"],
   },
+		{
+				name: 'W3C.org',
+				url: 'https://www.webdesignmuseum.org/web-design-history/w3c-org-1994',
+				description: 'Tim Berners-Lee founded an international organization called World Wide Web Consortium (W3C). The main objective of the consortium is the development of Web standards for the World Wide Web (WWW). For example, W3C developed standards for HTML, XHML, XML, or CSS markup languages. Another aim of the organization is education and development of Web Accessibility Rules (WCAG).',
+				created_at: new Date('1994-10-13'),
+    tags: ["standards"],
+		},
   {
     name: "W3C",
     url: "https://www.w3.org/Style/CSS20/history.html",
@@ -170,6 +177,46 @@ const data = [
     created_at: new Date("2009-07-23"),
     tags: ["standards"],
   },
+		{
+				name: 'Web 2.0',
+				url: 'https://www.webdesignmuseum.org/web-design-history/web-2-0-1999',
+				description: "Darcy DiNucci published an article entitled 'Fragmented Future' in the Print magazine, in which the term Web 2.0 was first introduced. The term refers to the development phase of the Web in which the content of websites is created and shared primarily by the users themselves. Typical Web 2.0 examples include social networking sites, web forums, internet encyclopedias, or photo/video sharing portals. In 2004, Tim O'Reilly and Dale Dougherty held the first Web 2.0 conference, during which the term Web 2.0 was brought to the attention of a wider public.",
+				created_at: new Date('1999-04-01'),
+				tags: ["standards"],
+				links:[{
+						name: 'Article (PDF)',
+						url: 'http://www.darcyd.com/fragmented_future.pdf'
+				}]
+		},
+		{
+				name: 'WOFF 1.0',
+				url: 'https://www.w3.org/Submission/2010/03/',
+				description: 'Mozilla Foundation, Opera Software and Microsoft submitted a proposal for the specification of a new Web Open Font Format (WOFF) to the W3C. The WOFF fonts are currently supported by all major browsers.',
+				created_at: new Date('2010-04-08'),
+				tags: ["standards"],
+		},
+		{
+				name: 'HTML 5',
+				url: 'https://www.w3.org/TR/2014/REC-html5-20141028/',
+				description: 'W3C adopted the final recommendation for the HTML5 markup language. The HTML5 version has brought an improved browser multimedia playback support, new semantic tags that better define page structure, offline application support, and the <canvas> tag that can interpret vector graphics with an option to insert images.',
+				created_at: new Date('2014-10-28'),
+				tags: ["standards"],
+		},
+		{
+				name: 'Material Design',
+				url: '',
+				description: 'Google introduced a new graphic style called Material Design at the Google I/O conference. Since 2015, Google has redesigned most of its applications and services using the consistent visual style of Material Design. According to Google\'s definition, Material Design is a "visual language that synthesizes the classic principles of good design with the innovation and the possibility of technology and science.”',
+				created_at: new Date('2014-06-25'),
+				tags: ["standards"],
+				
+		},
+		{
+				name: 'React',
+				url: 'https://reactjs.org/',
+				description: 'Software engineer Jordan Walke from Facebook announced the creation of the React javascript library (sometimes referred to as React.js or ReactJS) at the JSConf US conference. The open-source React library is designed to make it easier to create user interfaces and UI components for web applications. React can also be used to create single-page or mobile applications. The development and maintenance of the React web framework is currently handled by Facebook along with a large community of independent developers.',
+				created_at: new Date('2013-05-29'),
+				tags: ["standards"],
+		}
 ];
 
 export default data;
