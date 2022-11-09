@@ -106,7 +106,16 @@ const data = [
 				created_at: new Date('2015-03-30'),
 				tags: ['browsers']
 				
-		}
+		},
+		
+  {
+    name: "Internet Explorer 6",
+    url: "https://www.webdesignmuseum.org/web-design-history/internet-explorer-6-0-2001",
+    description:
+      "Less than two months before the official release of the Windows XP operating system, Microsoft released Internet Explorer 6.0. IE 6 was integrated into Windows XP and was also compatible with previous versions of the system down to Windows 98. Despite a significant amount of security flaws and lack of support for web standards, Internet Explorer 6.0 gained more than 80% market share in 2004. Together with earlier versions of IE 5.0 and IE 5.5, the proportion of Internet Explorer browsers in 2004 was more than 90%.",
+    created_at: new Date("2001-08-27"),
+    tags: ["browsers"],
+  },
 ];
 
 export default data;

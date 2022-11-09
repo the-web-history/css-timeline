@@ -138,14 +138,6 @@ const data = [
     tags: ["standards"],
   },
   {
-    name: "Internet Explorer 6",
-    url: "https://www.webdesignmuseum.org/web-design-history/internet-explorer-6-0-2001",
-    description:
-      "Less than two months before the official release of the Windows XP operating system, Microsoft released Internet Explorer 6.0. IE 6 was integrated into Windows XP and was also compatible with previous versions of the system down to Windows 98. Despite a significant amount of security flaws and lack of support for web standards, Internet Explorer 6.0 gained more than 80% market share in 2004. Together with earlier versions of IE 5.0 and IE 5.5, the proportion of Internet Explorer browsers in 2004 was more than 90%.",
-    created_at: new Date("2001-08-27"),
-    tags: ["browsers", "standards"],
-  },
-  {
     name: "SVG 1.0",
     url: "https://www.w3.org/TR/SVG11/",
     description:
@@ -216,7 +208,91 @@ const data = [
 				description: 'Software engineer Jordan Walke from Facebook announced the creation of the React javascript library (sometimes referred to as React.js or ReactJS) at the JSConf US conference. The open-source React library is designed to make it easier to create user interfaces and UI components for web applications. React can also be used to create single-page or mobile applications. The development and maintenance of the React web framework is currently handled by Facebook along with a large community of independent developers.',
 				created_at: new Date('2013-05-29'),
 				tags: ["standards"],
-		}
+		},
+		{
+				name: 'Media Queries - First Public Draft',
+				url: 'https://www.w3.org/TR/2001/WD-css3-mediaqueries-20010404/',
+				description: 'HTML4 and CSS2 currently support media-dependent style sheets tailored for different media types. For example, a document may use sans-serif fonts when displayed on a screen and serif fonts when printed. "Screen" and "print" are two of the media types that have been defined. To describe in more detail what type of devices a style sheet applies to, this document proposes media queries.',
+				created_at: new Date('2001-04-04'),
+				tags: ["standards"],
+		},
+		{
+				name: 'Media Queries - Working Draft',
+				url: 'https://www.w3.org/TR/2001/WD-css3-mediaqueries-20010517/',
+				description: '',
+				created_at: new Date('2001-05-17'),
+				tags: ["standards"],
+		},
+		{
+				name: 'Media Queries - Last Call Working Draft',
+				url: 'https://www.w3.org/TR/2002/WD-css3-mediaqueries-20020123/',
+				description: 'This document is produced by the CSS Working Group and is one of the modules of the upcoming CSS3 specification. This is a  W3C Last Call Working Draft for review by W3C members and other interested parties.',
+				created_at: new Date('2002-01-23'),
+				tags: ["standards"],
+		},
+		{
+				name: 'Media Queries - Candidate Recommendation Snapshot',
+				url: 'https://www.w3.org/TR/2002/CR-css3-mediaqueries-20020708',
+				description: '',
+				created_at: new Date('2002-07-08'),
+				tags: ["standards"],
+		},
+		{
+				name: 'Media Queries - Candidate Recommendation Snapshot',
+				url: 'https://www.w3.org/TR/2007/CR-css3-mediaqueries-20070606',
+				description: '',
+				created_at: new Date('2007-06-06'),
+				tags: ["standards"],
+		},
+		{
+				name: 'Media Queries - Last Call Working Draft',
+				url: 'https://www.w3.org/TR/2008/WD-css3-mediaqueries-20081015/',
+				description: '',
+				created_at: new Date('2008-10-15'),
+				tags: ["standards"],
+		},
+		{
+				name: 'Media Queries - Candidate Recommendation Snapshot',
+				url: 'https://www.w3.org/TR/2009/CR-css3-mediaqueries-20090423/',
+				description: '',
+				created_at: new Date('2009-04-23'),
+				tags: ["standards"],
+		},
+		{
+				name: 'Media Queries - Candidate Recommendation Snapshot',
+				url: 'https://www.w3.org/TR/2009/CR-css3-mediaqueries-20090915/',
+				description: '',
+				created_at: new Date('2009-09-15'),
+				tags: ["standards"],
+		},
+		{
+				name: 'Media Queries - Candidate Recommendation Snapshot',
+				url: 'https://www.w3.org/TR/2010/CR-css3-mediaqueries-20100727/',
+				description: '',
+				created_at: new Date('2010-07-27'),
+				tags: ["standards"],
+		},
+		{
+				name: 'Media Queries - Proposed Recommendation',
+				url: 'https://www.w3.org/TR/2012/PR-css3-mediaqueries-20120426/',
+				description: '',
+				created_at: new Date('2012-04-26'),
+				tags: ["standards"],
+		},
+		{
+				name: 'Media Queries Recommendation',
+				url: 'https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/',
+				description: '',
+				created_at: new Date('2012-06-19'),
+				tags: ["standards"],
+		},
+		{
+				name: 'Media Queries Level 3 Recommendation',
+				url: 'https://www.w3.org/TR/2022/REC-mediaqueries-3-20220405/',
+				description: '',
+				created_at: new Date('2022-04-05'),
+				tags: ["standards"],
+		},
 ];
 
 export default data;
