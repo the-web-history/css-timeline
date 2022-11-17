@@ -44,7 +44,7 @@ const data = [
   },
   {
     name: "reseter.css",
-    url: "https://krishdevdb.github.io/reseter.css/",
+    url: "https://github.com/resetercss/reseter.css",
     description:
       "Reseter.css - A Futuristic Alternative To Normalize.css And CSS Resets ",
     created_at: new Date("2021-02-07"),
