@@ -45,6 +45,13 @@ const articles = [
     created_at: new Date("2002-04-01"),
     tags: ["articles"],
   },
+  {
+    name: 'CSS: Simple Rules for Better Organization and More Efficiency',
+    url: 'https://meiert.com/en/blog/css-organization-and-efficiency/',
+    description: 'A blog post by Jens Oliver Meiert about keeping CSS DRY has been based on using declarations just once',
+    created_at: new Date('2008-05-15'),
+    tags: ["articles"],
+  }
 ];
 
 export default articles;
