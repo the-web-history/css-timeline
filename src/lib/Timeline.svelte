@@ -58,9 +58,9 @@
 		 'websites',
  ]
 
- const beginning = 1994;
+ const beginning = 1990;
  const years = [];
- for(let i = 0; i< 30;i++) {
+ for(let i = 0; i< 40;i++) {
 		 years.push(beginning + i);
  }
 
@@ -92,6 +92,9 @@
 								<option value={year}>{year}</option>
 						{/each}
 				</select>
+		</div>
+		<div>
+				<a class="header-link" href="https://github.com/the-web-history/css-timeline" target="_blank">Github</a>
 		</div>
 </div>
 <ul class="timeline">
@@ -418,6 +421,11 @@
  h1 {
 		 font-size: 1em;
 		 margin: 0;
+ }
+
+ .header-link {
+		 text-decoration: none;
+		 padding-right: 1em;
  }
 
 </style>

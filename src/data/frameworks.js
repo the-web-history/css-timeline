@@ -93,6 +93,114 @@ const data = [
 				created_at: new Date('2016-06-19'),
 				tags: ['frameworks']
 		},
+		{
+				name: 'Pure',
+				url: 'https://purecss.io/',
+				description: 'A set of small, responsive CSS modules that you can use in every web project.',
+				created_at: new Date('2013-05-15'),
+				tags: ['frameworks', 'lightweight']
+		},
+		{
+				name: 'Milligram',
+				url: 'https://milligram.io/',
+				description: 'A minimalist CSS framework',
+				created_at: new Date('2015-12-26'),
+				tags: ['frameworks', 'lightweight']
+		},
+		{
+				name: 'Picnic CSS',
+				url: 'https://picnicss.com/',
+				description: 'Lightweight and Beautiful library',
+				created_at: new Date('2014-08-31'),
+				tags: ['frameworks', 'lightweight']
+		},
+		{
+				name: 'Chota',
+				url: 'https://jenil.github.io/chota/',
+				description: 'A micro (~3kb) CSS framework.',
+				created_at: new Date('2017-04-01'),
+				tags: ['frameworks', 'lightweight']
+		},
+		{
+				name: 'UIKit',
+				url: 'https://getuikit.com/',
+				description: 'A lightweight and modular front-end framework for developing fast and powerful web interfaces.',
+				created_at: new Date('2015-11-08'),
+				tags: ['frameworks']
+		},
+		{
+				name: 'Primer',
+				url: 'https://primer.style/',
+				description: 'Design, build, and create with GitHub’s design system. Primer was created for GitHub by GitHub. We love it so much, we chose to open-source it to allow the community to design and build their own projects with Primer.',
+				created_at: new Date('2015-03-15'),
+				tags: ['frameworks']
+				
+		},
+		{
+				name: 'Carbon Design System',
+				url: 'https://carbondesignsystem.com/',
+				description: 'Carbon is IBM’s open source design system for products and digital experiences. With the IBM Design Language as its foundation, the system consists of working code, design tools and resources, human interface guidelines, and a vibrant community of contributors.',
+				created_at: new Date('2015-06-07'),
+				tags: ['frameworks']
+		},
+		{
+				name: 'Fomantic-UI',
+				url: 'https://fomantic-ui.com/',
+				description: 'The official community fork of Semantic-UI. Build beautiful websites fast, with concise HTML, intuitive javascript, and simplified debugging.',
+				created_at: new Date('2013-04-07'),
+				tags: ['frameworks']
+		},
+		{
+				name: 'Pico.css',
+				url: 'https://picocss.com/',
+				description: 'Minimal CSS Framework for semantic HTML. Elegant styles for all natives HTML elements without .classes and dark mode automatically enabled.',
+				created_at: new Date('2019-11-24'),
+				tags: ['frameworks']
+				
+		},
+		{
+				name: 'Blaze UI',
+				url: 'https://www.blazeui.com/',
+				description: 'Framework-free open source UI toolkit. Blaze UI provides great structure for building websites quickly with a scalable and maintainable foundation.',
+				created_at: new Date('2020-04-05'),
+				tags: ['frameworks']
+		},
+		{
+				name: 'Cirrus',
+				url: 'https://cirrus-ui.netlify.app/',
+				description: 'A component-and-utility-centric SCSS framework designed for rapid prototyping. Use beautiful pre-built components to bootstrap your next project and utility classes to polish your final design.',
+				created_at: new Date('2016-12-18'),
+				tags: ['frameworks']
+		},
+		{
+				name: 'turretcss',
+				url: 'https://turretcss.com/',
+				description: 'Developed for design, turretcss is a styles and browser behaviour normalisation framework for rapid development of responsive and accessible websites.',
+				created_at: new Date('2013-11-10'),
+				tags: ['frameworks']
+		},
+		{
+				name: 'Vanilla',
+				url: 'https://vanillaframework.io/',
+				description: 'A simple, extensible CSS framework. Backed by open-source code and written in Sass by the Canonical Web Team.',
+				created_at: new Date('2015-02-22'),
+				tags: ['frameworks']
+				
+		},
+		{
+				name: 'PatternFly',
+				url: 'https://www.patternfly.org/v4/',
+				description: 'Build scalable experiences in the open. PatternFly is an open source design system built to drive consistency and unify teams.',
+				created_at: new Date('2017-11-05'),
+				tags: ['frameworks']
+		},
+		{
+				name: 'HiQ',
+				url: 'https://jonathanharrell.github.io/hiq/',
+				description: 'A high-IQ CSS framework. Jump-start your styling with a lightweight, easily customizable framework that is built with CSS custom properties and modern best practices.',
+				created_at: new Date('2017-05-07'),
+				tags: ['frameworks']
+		}
 			
 
 ];

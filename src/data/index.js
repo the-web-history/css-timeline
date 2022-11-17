@@ -31,4 +31,6 @@ const data = [
   ...websites,
 ];
 
+console.log('Events = ', data.length);
+
 export default data;
