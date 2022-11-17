@@ -48,7 +48,7 @@ const articles = [
   {
     name: 'CSS: Simple Rules for Better Organization and More Efficiency',
     url: 'https://meiert.com/en/blog/css-organization-and-efficiency/',
-    description: 'A blog post by Jens Oliver Meiert about keeping CSS DRY has been based on using declarations just once',
+    description: 'A first mention of using declarations just once, for smaller CSS payload and improved maintainability',
     created_at: new Date('2008-05-15'),
     tags: ["articles"],
   }
