@@ -116,6 +116,13 @@ const data = [
     created_at: new Date("2001-08-27"),
     tags: ["browsers"],
   },
+  {
+    name: 'Line Mode Browser',
+    url:"https://www.webdesignmuseum.org/web-design-history/line-mode-browser-1991",
+    description: "A team made up of Tim Berners-Lee, Henrik Frystyk Nielsen and Nicola Pellow designed a simple browser called Line Mode Browser (The Libwww Line Mode Browser). This was the second browser ever made for the World Wide Web.",
+    created_at: new Date('1991-05-14'),
+    tags: ['browsers']
+  }
 ];
 
 export default data;
