@@ -1,8 +1,6 @@
 <script>
 
- import { onMount } from 'svelte';
- 
-  export let data = [];
+ export let data = [];
  let filter;
  let year;
  let reversed = false;
@@ -146,6 +144,10 @@
     z-index: 5;
   }
 
+ :global(html.dark) .timeline {
+   background: var(--slate-900);
+ }
+ 
   .timeline li {
     padding: 1em 0;
   }
@@ -189,6 +191,10 @@
     font-weight: 600;
     text-align: left;
   }
+
+ :global(html.dark) .flag {
+   background: var(--slate-800);
+ }
 
   .flag a {
     color: inherit;
@@ -259,6 +265,14 @@
     pointer-events: none;
   }
 
+ :global(html.dark) .direction-l .flag:after {
+    border-left-color: var(--slate-800);
+ }
+
+ :global(html.dark) .direction-r .flag:after {
+   border-right-color: var(--slate-800);
+ }
+
   .time-wrapper {
     display: inline;
 
@@ -282,12 +296,21 @@
     background: rgb(248,248,248);
   }
 
+ :global(html.dark) .time {
+   background: var(--slate-700);
+ }
+
   .desc {
     margin: 1em 0.75em 0 0;
 			font-size: 0.77777em;
 			font-style: italic;
 			line-height: 1.5em;
   }
+
+ :global(html.dark) .desc {
+   color: var(--slate-300);
+ }
+
 
   .direction-r .desc {
     margin: 1em 0 0 0.75em;
@@ -381,6 +404,7 @@
       z-index: 15;
     }
 
+ 
     .direction-l .desc,
     .direction-r .desc {
       position: relative;
@@ -414,6 +438,12 @@
      top: 0;
  }
 
+
+ :global(html.dark) .options-wrapper {
+   background: var(--slate-800);
+   color: var(--bg-color);
+ }
+
  .date-filter {
 		 padding:0 20px;
  }
@@ -426,6 +456,10 @@
  .header-link {
 		 text-decoration: none;
 		 padding-right: 1em;
+ }
+
+ :global(html.dark) .header-link {
+   color: var(--slate-200);
  }
 
 </style>

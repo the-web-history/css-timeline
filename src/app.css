@@ -1,8 +1,27 @@
+:root {
+  --text-color: rgb(50,50,50);
+  --bg-color: rgb(230,230,230);
+  --timeline-bg: rgb(80,80,80);
+
+  --slate-900: #0f172a;
+  --slate-800: #1e293b;
+  --slate-700: #334155;
+  --slate-100: #f1f5f9;
+  --slate-200: #e2e8f0;
+  --slate-300: #cbd5e1;
+}
+
 body {	
   margin: 0;
   padding: 0;
-  background: rgb(230,230,230);
+  background: var(--bg-color);
   
-  color: rgb(50,50,50);
+  color: var(--text-color);
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+
+.dark body {
+  color: var(--slate-100);
+  background: var(--slate-900);
+}
+
