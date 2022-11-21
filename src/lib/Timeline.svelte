@@ -1,9 +1,12 @@
 <script>
 
+ import { onMount } from 'svelte';
+
  export let data = [];
  let filter;
  let year;
  let reversed = false;
+ let darkmode = false;
 
  $: sortedData = reversed 
 									? data.sort((a,b) => b.created_at - a.created_at)
@@ -62,6 +65,20 @@
 		 years.push(beginning + i);
  }
 
+ function toggleDarkMode() {
+		 document.body.classList.toggle('dark');
+ }
+
+ onMount(() => {
+		 if (
+				 localStorage.cssTimeLineTheme === 'dark' ||
+				 (!('cssTimeLineTheme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+		 ) {
+				 darkmode = true;
+				 document.body.classList.add('dark');
+		 }
+
+ })
  
 </script>
 
@@ -91,6 +108,13 @@
 						{/each}
 				</select>
 		</div>
+		<div>
+				<label>
+						<input type="checkbox"  bind:checked={darkmode}  on:change={toggleDarkMode} />
+						Dark Mode
+				</label>
+		</div>
+
 		<div>
 				<a class="header-link" href="https://github.com/the-web-history/css-timeline" target="_blank">Github</a>
 		</div>
@@ -129,22 +153,21 @@
     list-style-type: none;
   }
 
-  .timeline:before {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    content: ' ';
-    display: block;
-    width: 6px;
-    height: 100%;
-    margin-left: -3px;
-    background: rgb(80,80,80);
-    background: linear-gradient(to bottom, rgba(80,80,80,0) 0%, rgb(80,80,80) 8%, rgb(80,80,80) 92%, rgba(80,80,80,0) 100%);
+ .timeline:before {
+     position: absolute;
+     left: 50%;
+     top: 0;
+     content: ' ';
+     display: block;
+     width: 6px;
+     height: 100%;
+     margin-left: -3px;
+		 background: linear-gradient(to bottom, rgba(51, 65, 85, 0) 0%, var(--slate-700) 8%, var(--slate-700) 92%, rgba(51, 65, 85, 0) 100%);
 
-    z-index: 5;
-  }
+     z-index: 5;
+ }
 
- :global(html.dark) .timeline {
+ :global(body.dark) .timeline {
    background: var(--slate-900);
  }
  
@@ -192,8 +215,8 @@
     text-align: left;
   }
 
- :global(html.dark) .flag {
-   background: var(--slate-800);
+ :global(body.dark) .flag {
+   background: var(--slate-700);
  }
 
   .flag a {
@@ -206,14 +229,10 @@
   }
 
   .direction-l .flag {
-    -webkit-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-    -moz-box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
     box-shadow: -1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   }
 
   .direction-r .flag {
-    -webkit-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
-    -moz-box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
     box-shadow: 1px 1px 1px rgba(0,0,0,0.15), 0 0 1px rgba(0,0,0,0.15);
   }
 
@@ -265,12 +284,12 @@
     pointer-events: none;
   }
 
- :global(html.dark) .direction-l .flag:after {
-    border-left-color: var(--slate-800);
+ :global(body.dark) .direction-l .flag:after {
+    border-left-color: var(--slate-700);
  }
 
- :global(html.dark) .direction-r .flag:after {
-   border-right-color: var(--slate-800);
+ :global(body.dark) .direction-r .flag:after {
+   border-right-color: var(--slate-700);
  }
 
   .time-wrapper {
@@ -296,8 +315,9 @@
     background: rgb(248,248,248);
   }
 
- :global(html.dark) .time {
-   background: var(--slate-700);
+ :global(body.dark) .time {
+    background: rgb(250,80,80);
+			color: var(--slate-100);
  }
 
   .desc {
@@ -307,7 +327,7 @@
 			line-height: 1.5em;
   }
 
- :global(html.dark) .desc {
+ :global(body.dark) .desc {
    color: var(--slate-300);
  }
 
@@ -342,9 +362,13 @@
     }
 
     .flag {
-      background: rgb(255,255,255);
+				/* background: rgb(255,255,255); */
       z-index: 15;
     }
+
+			:global(body.dark) .flag {
+					background: var(--slate-700);
+			}
 
     .direction-l .flag:before,
     .direction-r .flag:before {
@@ -372,8 +396,8 @@
       width: 0;
       margin-left: -8px;
       border: solid transparent;
-      border-bottom-color: rgb(255,255,255);
-      border-width: 8px;
+				border-bottom-color: rgb(255,255,255);
+				border-width: 8px;
       pointer-events: none;
     }
 
@@ -396,7 +420,7 @@
       position: relative;
       margin: 1em 0 0 0;
       padding: 1em;
-      background: rgb(245,245,245);
+				/* background: rgb(245,245,245); */
       -webkit-box-shadow: 0 0 1px rgba(0,0,0,0.20);
       -moz-box-shadow: 0 0 1px rgba(0,0,0,0.20);
       box-shadow: 0 0 1px rgba(0,0,0,0.20);
@@ -423,6 +447,10 @@
       margin: 1em 4em 0 4em;
     }
 
+			h1, .header-link { display: none;}
+
+
+
   }
 
  .options-wrapper {
@@ -439,7 +467,7 @@
  }
 
 
- :global(html.dark) .options-wrapper {
+ :global(body.dark) .options-wrapper {
    background: var(--slate-800);
    color: var(--bg-color);
  }
@@ -458,8 +486,12 @@
 		 padding-right: 1em;
  }
 
- :global(html.dark) .header-link {
+ :global(body.dark) .header-link {
    color: var(--slate-200);
+ }
+
+ :global(body.dark) a {
+		 color: var(--slate-200);
  }
 
 </style>
