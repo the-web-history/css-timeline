@@ -51,7 +51,49 @@ const articles = [
     description: 'A first mention of using declarations just once, for smaller CSS payload and improved maintainability',
     created_at: new Date('2008-05-15'),
     tags: ["articles"],
-  }
+  },
+		{
+				name: 'Atomic OOBEMITSCSS',
+				url: 'https://www.sitepoint.com/atomic-oobemitscss/',
+				description: 'An article by Una Kravets in SitePoint about Atomic OOBEMITSCSS',
+				created_at: new Date('2015-07-07'),
+    tags: ["articles"],
+		},
+		{
+				name: 'Title CSS: A Simple Approach to CSS Class Naming',
+				url: 'https://www.sitepoint.com/title-css-simple-approach-css-class-naming/',
+				description: 'An article by Jon Cuthbert in SitePoint about Title CSS',
+				created_at: new Date('2015-03-25'),
+    tags: ["articles"],
+		},
+		{
+				name: '8 simple rules for a robust, scalable CSS architecture',
+				url: 'https://github.com/jareware/css-architecture/blob/master/README.md',
+				description: 'The manifest of things by Jarno Rantanen, about managing CSS in large, complex web projects during my many years of professional web development. ',
+				created_at: new Date('2016-10-16'),
+				tags: ["articles"],
+		},
+		{
+				name: 'More Meaningful CSS',
+				url: 'https://snook.ca/archives/html_and_css/more-meaningful-css',
+				description: 'An article by Jonathan Snook',
+				created_at: new Date('2016-05-17'),
+				tags: ["articles"],
+		},
+		{
+				name: 'CSS and Scalability',
+				url: 'http://mrmrs.io/writing/2016/03/24/scalable-css/',
+				description: 'An article by Adam Morse',
+				created_at: new Date('2016-03-24'),
+				tags: ["articles"],
+		},
+		{
+				name: 'Can CSS Be Too Modular?',
+				url: 'csswizardry.com/2015/03/can-css-be-too-modular/',
+				description: 'An article in CSSWizardry by Harry Roberts',
+				created_at: new Date('2015-03-08'),
+				tags: ["articles"],
+		}
 ];
 
 export default articles;

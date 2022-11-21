@@ -85,6 +85,35 @@ const data = [
 				created_at: new Date('2014-05-01'),
 				tags: ['methodology']
 		},
+		{
+				name: 'Title CSS',
+				url: 'https://github.com/cuth/Title-CSS',
+				description: 'Title CSS is an organizational technique geared to help you write beautiful and maintainable CSS. Similar to BEM, Title CSS aims to make CSS more readable by giving visual cues.',
+				created_at: new Date('2014-02-25'),
+				tags: ['methodology']
+		},
+		{
+				name: 'Idiomatic CSS',
+				url: 'https://github.com/necolas/idiomatic-css',
+				description: 'Principles of writing consistent, idiomatic CSS.',
+				created_at: new Date('2012-05-20'),
+				tags: ['methodology']
+				
+		},
+		{
+				name: 'Point North',
+				url: 'http://pointnorth.io/#base-browser-styling',
+				description: 'North is a set of standards and best practices for developing modern web based properties.',
+				created_at: new Date('2013-11-03'),
+				tags: ['methodology']
+		},
+		{
+				name: 'Kickoff CSS',
+				url: 'http://trykickoff.com/learn/css.html#namingscheme',
+				description: 'Kickoff uses a bespoke naming scheme for classnames, inspired loosely by the BEM naming scheme.',
+				created_at: new Date('2016-04-26'),
+				tags: ['methodology']
+		}
 ];
 
 export default data;
