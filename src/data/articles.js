@@ -93,6 +93,27 @@ const articles = [
 				description: 'An article in CSSWizardry by Harry Roberts',
 				created_at: new Date('2015-03-08'),
 				tags: ["articles"],
+		},
+		{
+				name: 'Side Effects in CSS',
+				url: 'https://philipwalton.com/articles/side-effects-in-css/',
+				description: 'An article by Philip Walton in his website about the side effects of CSS',
+				created_at: new Date('2015-03-03'),
+				tags: ["articles"],
+		},
+		{
+				name: 'CSS Specificity Wars',
+				url: 'https://stuffandnonsense.co.uk/archives/css_specificity_wars.html',
+				description: 'Understanding CSS Specificity through Star Wars',
+				created_at: new Date('2005-10-07'),
+				tags: ["articles"],
+		},
+		{
+				name: 'CSS Sprites: Image Slicing\'s Kiss of Death',
+				url: 'https://alistapart.com/article/sprites/',
+				description: 'An article by Dave Shea about CSS Sprites in A List Apart',
+				created_at: new Date('2004-03-05'),
+				tags: ["articles"],
 		}
 ];
 

@@ -105,6 +105,20 @@ const data = [
       },
     ],
   },
+		{
+				name: 'React',
+				url: 'https://reactjs.org/',
+				description: 'Software engineer Jordan Walke from Facebook announced the creation of the React javascript library (sometimes referred to as React.js or ReactJS) at the JSConf US conference. The open-source React library is designed to make it easier to create user interfaces and UI components for web applications. React can also be used to create single-page or mobile applications. The development and maintenance of the React web framework is currently handled by Facebook along with a large community of independent developers.',
+				created_at: new Date('2013-05-29'),
+				tags: ["tools"],
+		},
+		{
+				name: 'CSSTidy',
+				url: 'https://csstidy.sourceforge.net/index.php',
+				description: 'CSSTidy is an opensource CSS parser and optimiser. It is available as executeable file (available for Windows, Linux and OSX) which can be controlled per command line and as PHP script (both with almost the same functionality).',
+				created_at: new Date('2005-01-01'),
+				tags: ["tools"],
+		}
 ];
 
 export default data;

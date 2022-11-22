@@ -146,14 +146,6 @@ const data = [
     tags: ["standards"],
   },
   {
-    name: "Mozilla 1.0",
-    url: "https://www.webdesignmuseum.org/web-design-history/mozilla-1-0-2002",
-    description:
-      "Mozilla (also known as Mozilla.org) released the Mozilla 1.0 web browser. The basis for Mozilla 1.0 was Gecko, an open source rendering engine which significantly improved the support of web standards.",
-    created_at: new Date("2002-06-05"),
-    tags: ["browsers", "standards"],
-  },
-  {
     name: "CSS Grid",
     url: "https://www.w3.org/TR/2007/WD-css3-grid-20070905/",
     description:
@@ -203,13 +195,6 @@ const data = [
 				
 		},
 		{
-				name: 'React',
-				url: 'https://reactjs.org/',
-				description: 'Software engineer Jordan Walke from Facebook announced the creation of the React javascript library (sometimes referred to as React.js or ReactJS) at the JSConf US conference. The open-source React library is designed to make it easier to create user interfaces and UI components for web applications. React can also be used to create single-page or mobile applications. The development and maintenance of the React web framework is currently handled by Facebook along with a large community of independent developers.',
-				created_at: new Date('2013-05-29'),
-				tags: ["standards"],
-		},
-		{
 				name: 'Media Queries - First Public Draft',
 				url: 'https://www.w3.org/TR/2001/WD-css3-mediaqueries-20010404/',
 				description: 'HTML4 and CSS2 currently support media-dependent style sheets tailored for different media types. For example, a document may use sans-serif fonts when displayed on a screen and serif fonts when printed. "Screen" and "print" are two of the media types that have been defined. To describe in more detail what type of devices a style sheet applies to, this document proposes media queries.',
@@ -219,7 +204,7 @@ const data = [
 		{
 				name: 'Media Queries - Working Draft',
 				url: 'https://www.w3.org/TR/2001/WD-css3-mediaqueries-20010517/',
-				description: '',
+				description: 'Working draft version of Media Queries published',
 				created_at: new Date('2001-05-17'),
 				tags: ["standards"],
 		},
@@ -233,66 +218,95 @@ const data = [
 		{
 				name: 'Media Queries - Candidate Recommendation Snapshot',
 				url: 'https://www.w3.org/TR/2002/CR-css3-mediaqueries-20020708',
-				description: '',
+				description: 'Media queries became part of the W3C Candidate recommendation snapshot',
 				created_at: new Date('2002-07-08'),
 				tags: ["standards"],
 		},
 		{
 				name: 'Media Queries - Candidate Recommendation Snapshot',
 				url: 'https://www.w3.org/TR/2007/CR-css3-mediaqueries-20070606',
-				description: '',
+				description: 'Media queries became part of the W3C Candidate recommendation snapshot',
 				created_at: new Date('2007-06-06'),
 				tags: ["standards"],
 		},
 		{
 				name: 'Media Queries - Last Call Working Draft',
 				url: 'https://www.w3.org/TR/2008/WD-css3-mediaqueries-20081015/',
-				description: '',
+				description: 'This is the last call for the working draft of Media queries specificiation',
 				created_at: new Date('2008-10-15'),
 				tags: ["standards"],
 		},
 		{
 				name: 'Media Queries - Candidate Recommendation Snapshot',
 				url: 'https://www.w3.org/TR/2009/CR-css3-mediaqueries-20090423/',
-				description: '',
+				description: 'Media queries became part of the W3C Candidate recommendation snapshot',
 				created_at: new Date('2009-04-23'),
 				tags: ["standards"],
 		},
 		{
 				name: 'Media Queries - Candidate Recommendation Snapshot',
 				url: 'https://www.w3.org/TR/2009/CR-css3-mediaqueries-20090915/',
-				description: '',
+				description: 'Media queries became part of the W3C Candidate recommendation snapshot',
 				created_at: new Date('2009-09-15'),
 				tags: ["standards"],
 		},
 		{
 				name: 'Media Queries - Candidate Recommendation Snapshot',
 				url: 'https://www.w3.org/TR/2010/CR-css3-mediaqueries-20100727/',
-				description: '',
+				description: 'Media queries became part of the W3C Candidate recommendation snapshot',
 				created_at: new Date('2010-07-27'),
 				tags: ["standards"],
 		},
 		{
 				name: 'Media Queries - Proposed Recommendation',
 				url: 'https://www.w3.org/TR/2012/PR-css3-mediaqueries-20120426/',
-				description: '',
+				description: 'Media queries became a W3C proposed recommendation',
 				created_at: new Date('2012-04-26'),
 				tags: ["standards"],
 		},
 		{
 				name: 'Media Queries Recommendation',
 				url: 'https://www.w3.org/TR/2012/REC-css3-mediaqueries-20120619/',
-				description: '',
+				description: 'Media queries became a W3C recommendation',
 				created_at: new Date('2012-06-19'),
 				tags: ["standards"],
 		},
 		{
 				name: 'Media Queries Level 3 Recommendation',
 				url: 'https://www.w3.org/TR/2022/REC-mediaqueries-3-20220405/',
-				description: '',
+				description: 'Media Queries Level 3 became a W3C recommendation',
 				created_at: new Date('2022-04-05'),
 				tags: ["standards"],
 		},
+		{
+				name: 'Selectors - First Public Draft',
+				url: 'https://www.w3.org/TR/1999/WD-CSS3-selectors-19990803',
+				description: 'This document is the first draft of one of the "modules" for the upcoming CSS3 specification. It not only describes the selectors that already exist in CSS1 and CSS2, but also proposes new selectors for CSS3 as well as for other languages that may need them.',
+				created_at: new Date('1999-08-03'),
+				tags: ["standards"],
+
+		},
+		{
+				name: 'Selectors Level 3 - Proposed Recommendation',
+				url: 'https://www.w3.org/TR/2009/PR-css3-selectors-20091215/',
+				description: 'Selectors Level 3 became a W3C proposed recommendation. This document describes the selectors that already exist in CSS1 [CSS1] and CSS2 [CSS21], and further introduces new selectors for CSS3 and other languages that may need them.',
+				created_at: new Date('2009-12-15'),
+				tags: ["standards"],
+		},
+		{
+				name: 'Selectors Level 3 - Recommendation',
+				url: 'https://www.w3.org/TR/2011/REC-css3-selectors-20110929/',
+				description: 'Selectors Level 3 became a W3C recommendation.',
+				created_at: new Date('2011-09-29'),
+				tags: ["standards"],
+		},
+		{
+				name: 'Selectors Level 4 - First Public Draft',
+				url: 'https://www.w3.org/TR/2011/WD-selectors4-20110929/',
+				description: 'Selectors Level 4 describes the selectors that already exist in [SELECT], and further introduces new selectors for CSS and other languages that may need them. Publication as a Working Draft does not imply endorsement by the W3C Membership. This is a draft document and may be updated, replaced or obsoleted by other documents at any time. It is inappropriate to cite this document as other than work in progress.',
+				created_at: new Date('2011-09-29'),
+				tags: ["standards"],
+		}
 ];
 
 export default data;

@@ -122,7 +122,15 @@ const data = [
     description: "A team made up of Tim Berners-Lee, Henrik Frystyk Nielsen and Nicola Pellow designed a simple browser called Line Mode Browser (The Libwww Line Mode Browser). This was the second browser ever made for the World Wide Web.",
     created_at: new Date('1991-05-14'),
     tags: ['browsers']
-  }
+  },
+  {
+    name: "Mozilla 1.0",
+    url: "https://www.webdesignmuseum.org/web-design-history/mozilla-1-0-2002",
+    description:
+      "Mozilla (also known as Mozilla.org) released the Mozilla 1.0 web browser. The basis for Mozilla 1.0 was Gecko, an open source rendering engine which significantly improved the support of web standards.",
+    created_at: new Date("2002-06-05"),
+    tags: ["browsers"],
+  },
 ];
 
 export default data;
