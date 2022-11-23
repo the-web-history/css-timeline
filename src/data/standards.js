@@ -306,6 +306,28 @@ const data = [
 				description: 'Selectors Level 4 describes the selectors that already exist in [SELECT], and further introduces new selectors for CSS and other languages that may need them. Publication as a Working Draft does not imply endorsement by the W3C Membership. This is a draft document and may be updated, replaced or obsoleted by other documents at any time. It is inappropriate to cite this document as other than work in progress.',
 				created_at: new Date('2011-09-29'),
 				tags: ["standards"],
+		},
+		{
+				name: 'CSS Conditional Rules Module Level 5',
+				url: 'https://www.w3.org/TR/css-conditional-5/',
+				description: 'W3C First Public Working Draft',
+				created_at: new Date('2021-12-21'),
+				tags: ["standards"],
+		},
+		{
+				name: 'CSS Color Module Level 4',
+				url: 'https://www.w3.org/TR/2016/WD-css-color-4-20160705/',
+				description: 'First Public Working Draft published',
+				created_at: new Date('2016-07-05'),
+				tags: ["standards"],
+				
+		},
+		{
+				name: 'CSS Color Module Level 4',
+				url: 'https://www.w3.org/TR/2022/CRD-css-color-4-20221101/',
+				description: 'W3C Candidate Recommendation Draft published',
+				created_at: new Date('2022-11-01'),
+				tags: ["standards"],
 		}
 ];
 
