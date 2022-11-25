@@ -124,7 +124,7 @@
 				<li>
 						<div class="{index % 2 == 0 ? 'direction-r' : 'direction-l'}">
 								<div class="flag-wrapper">
-										<span class="flag"><a target="_blank" href="{repo.url}">{repo.name}</a></span>
+										<span class="flag"><a title={repo.name} target="_blank" href="{repo.url}">{repo.name}</a></span>
 										<span class="time-wrapper"><span class="time">{ repo.created_at.getFullYear()}, {months[repo.created_at.getMonth()]}</span></span>
 								</div>
 								<div class="desc">
@@ -503,6 +503,15 @@
 
  :global(body.dark) a {
 		 color: var(--slate-200);
+ }
+
+ .flag a {
+   white-space: nowrap;
+   overflow: hidden;
+   text-overflow: ellipsis;
+   max-width: 430px;
+   display: inline-block;
+   line-height: 1;
  }
 
 </style>
